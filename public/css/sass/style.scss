@@ -9,4 +9,7 @@ body {
     background-image: url("../path.jpg");
     background-attachment: fixed;
     background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
 }

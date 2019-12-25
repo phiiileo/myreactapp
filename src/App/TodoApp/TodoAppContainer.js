@@ -55,7 +55,7 @@ class TodoAppContainer extends React.Component {
     render() {
 
         return (
-            <div>
+            <div className="todoApp">
                 <TodoAppHeader
                     title={this.state.title}
                     handleAdd={this.addNewTodo}

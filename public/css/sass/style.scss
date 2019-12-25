@@ -6,4 +6,7 @@
 body {
     background-color: whitesmoke;
     color: black;
+    background-image: url("../path.jpg");
+    background-attachment: fixed;
+    background-size: cover;
 }

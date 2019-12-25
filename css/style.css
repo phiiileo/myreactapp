@@ -237,6 +237,10 @@ footer {
   margin-top: 0;
 }
 
+footer h3 {
+  color: rgba(245, 245, 245, 0);
+}
+
 footer .footer {
   padding: 20px 7%;
   margin-top: 50px;
@@ -269,4 +273,4 @@ body {
   height: 100vh;
   width: 100%;
 }
-/*# sourceMappingURL=style.css.map */urceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */

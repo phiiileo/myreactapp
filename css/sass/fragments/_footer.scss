@@ -1,25 +1,23 @@
 footer {
-    margin-top: 50px;
+    margin-top: 0;
+  .footer {
     padding: 20px 7%;
-    border-top: 1px solid $brand_color;
-    z-index: 2;
+    margin-top: 50px;
     background-color: whitesmoke;
-    .footer {
-        display: grid;
-        grid-template-columns: 1fr 3fr;
-        column-gap: 10px;
-        &_content1 {
-            a {
-                display: block;
-                margin-bottom: 10px;
-            }
-        }
-        &_content2 {
-            p{
-                text-align: right;
-                margin-bottom: 10px;
-                
-            }
-        }
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    column-gap: 10px;
+    &_content1 {
+      a {
+        display: block;
+        margin-bottom: 10px;
+      }
     }
+    &_content2 {
+      p {
+        text-align: right;
+        margin-bottom: 10px;
+      }
+    }
+  }
 }

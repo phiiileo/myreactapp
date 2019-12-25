@@ -234,14 +234,13 @@ main {
 }
 
 footer {
-  margin-top: 50px;
-  padding: 20px 7%;
-  border-top: 1px solid darkcyan;
-  z-index: 2;
-  background-color: whitesmoke;
+  margin-top: 0;
 }
 
 footer .footer {
+  padding: 20px 7%;
+  margin-top: 50px;
+  background-color: whitesmoke;
   display: -ms-grid;
   display: grid;
   -ms-grid-columns: 1fr 3fr;
@@ -270,4 +269,4 @@ body {
   height: 100vh;
   width: 100%;
 }
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=style.css.map */urceMappingURL=style.css.map */

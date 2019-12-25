@@ -1,0 +1,264 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: black;
+  display: inline-block;
+}
+
+a:hover {
+  color: darkcyan;
+}
+
+header {
+  background-color: darkcyan;
+  padding: 20px 7%;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+}
+
+header section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 3fr 9fr;
+      grid-template-columns: 3fr 9fr;
+}
+
+header section .brand span {
+  color: white;
+  font-size: 25px;
+}
+
+header section .menu {
+  text-align: right;
+}
+
+header section .menu nav a {
+  margin-left: 20px;
+  color: white;
+}
+
+header section .menu nav a:hover {
+  border-bottom: 1px solid white;
+}
+
+.todoHeader {
+  text-align: center;
+  margin-top: 30px;
+  border-bottom: 1px solid darkcyan;
+}
+
+.todoHeader section {
+  margin: 20px 0;
+  font-size: 18px;
+}
+
+.todoHeader section input {
+  padding: 10px 20px;
+  width: 70%;
+  border: none;
+  border-bottom: 1px solid darkcyan;
+}
+
+.todoHeader section input:focus {
+  color: white;
+  border-bottom: 1px solid darkcyan;
+  background-color: darkcyan;
+  -webkit-transition: all 0.5s ease-in-out;
+  transition: all 0.5s ease-in-out;
+}
+
+.todoHeader section button {
+  background-color: darkcyan;
+  padding: 10px;
+  border: 1px solid darkcyan;
+  color: white;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.todoHeader section button:hover {
+  opacity: 0.9;
+  -webkit-box-shadow: 1px 1px 5px darkcyan;
+          box-shadow: 1px 1px 5px darkcyan;
+}
+
+.todoBody {
+  margin: 30px 0;
+  overflow-y: scroll;
+  max-height: 50vh;
+}
+
+.todoBody .todo {
+  padding-left: 20px;
+  min-height: 50px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: relative;
+  border-bottom: 1px solid darkcyan;
+}
+
+.todoBody .todo input {
+  margin-right: 20px;
+  cursor: pointer;
+}
+
+.todoBody .todo .description {
+  width: 80%;
+  word-wrap: break-word;
+}
+
+.todoBody .todo .close {
+  position: absolute;
+  right: 10px;
+  background-color: red;
+  color: white;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 10px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.todoBody .todo:hover {
+  background-color: #008b8b10;
+}
+
+.todoBody #hide {
+  display: none;
+}
+
+.todoBody .done, .todoBody .done:hover {
+  background: -webkit-gradient(linear, right top, left top, color-stop(50%, darkcyan), color-stop(50%, transparent));
+  background: linear-gradient(to left, darkcyan 50%, transparent 50%);
+  background-size: 200% 100%;
+  background-position: right bottom;
+  -webkit-transition: all 1s ease;
+  transition: all 1s ease;
+}
+
+main {
+  padding: 0 7%;
+  padding-top: 80px;
+}
+
+.calculator {
+  padding-top: 80px;
+  width: 350px;
+  margin: 0 auto;
+  max-height: 80vh;
+}
+
+.calculator section {
+  border: 1px solid darkcyan;
+  margin-top: 50px;
+}
+
+.calculator .screen:disabled {
+  display: block;
+  width: 100%;
+  padding: 5px 20px;
+  padding-top: 50px;
+  font-size: 25px;
+  border: 1px solid darkcyan;
+  text-align: right;
+  background-color: rgba(0, 139, 139, 0.103);
+}
+
+.calculator .screen:first-child {
+  border-bottom: none;
+}
+
+.calculator .buttons input {
+  color: darkcyan;
+  width: 25%;
+  height: 50px;
+  cursor: pointer;
+  border: 1px solid darkcyan;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+.calculator .buttons input:hover {
+  background-color: rgba(0, 139, 139, 0.103);
+}
+
+.calculator .buttons #delete {
+  width: 12.5%;
+  background-color: darkred;
+  color: white;
+}
+
+.calculator .buttons #delete:hover {
+  background-color: red;
+}
+
+.calculator .buttons #submit {
+  margin-top: 2px;
+  width: 100%;
+  background-color: darkcyan;
+  color: white;
+  font-size: 50px;
+  height: auto;
+}
+
+.calculator .buttons #submit:hover {
+  background-color: green;
+}
+
+footer {
+  margin-top: 50px;
+  padding: 20px 7%;
+  border-top: 1px solid darkcyan;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  z-index: 2;
+  background-color: whitesmoke;
+}
+
+footer .footer {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 3fr;
+      grid-template-columns: 1fr 3fr;
+  -webkit-column-gap: 10px;
+          column-gap: 10px;
+}
+
+footer .footer_content1 a {
+  display: block;
+  margin-bottom: 10px;
+}
+
+footer .footer_content2 p {
+  text-align: right;
+  margin-bottom: 10px;
+}
+
+body {
+  background-color: whitesmoke;
+  color: black;
+}
+/*# sourceMappingURL=style.css.map */

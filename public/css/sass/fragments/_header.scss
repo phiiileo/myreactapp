@@ -1,0 +1,31 @@
+header {
+  background-color: $brand_color;
+  padding: 20px 7%;
+  position: fixed;
+  width: 100%;
+  z-index: 5;
+
+  section {
+    display: grid;
+    grid-template-columns: 3fr 9fr;
+
+    .brand {
+      span {
+        color: white;
+        font-size: 25px;
+      }
+    }
+    .menu {
+      text-align: right;
+      nav {
+        a {
+          margin-left: 20px;
+          color: white;
+        }
+        a:hover {
+          border-bottom: 1px solid white;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,9 @@
+@import "./fragments/config";
+@import "./fragments/header";
+@import "./fragments/mainBody";
+@import "./fragments/_calculator.scss";
+@import "./fragments/footer";
+body {
+    background-color: whitesmoke;
+    color: black;
+}

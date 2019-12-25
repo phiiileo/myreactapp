@@ -1,0 +1,84 @@
+.todoHeader {
+  text-align: center;
+  margin-top: 30px;
+  border-bottom: 1px solid $brand_color;
+
+  section {
+    margin: 20px 0;
+    font-size: 18px;
+    input {
+      padding: 10px 20px;
+      width: 70%;
+      border: none;
+      border-bottom: 1px solid $brand_color;
+    }
+    input:focus {
+      color: white;
+      border-bottom: 1px solid $brand_color;
+      background-color: $brand_color;
+      transition: all 0.5s ease-in-out;
+    }
+    button {
+      background-color: $brand_color;
+      padding: 10px;
+      border: 1px solid $brand_color;
+      color: white;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    button:hover {
+      opacity: 0.9;
+      box-shadow: 1px 1px 5px $brand_color;
+    }
+  }
+}
+
+.todoBody {
+  margin: 30px 0;
+  overflow-y: scroll;
+  max-height: 50vh;
+  .todo {
+      padding-left: 20px;
+    min-height: 50px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    border-bottom: 1px solid $brand_color;
+    
+    input {
+      margin-right: 20px;
+      cursor: pointer;
+    }
+    .description {
+        width: 80%;
+        word-wrap: break-word;
+    }
+    .close {
+      position: absolute;
+      right: 10px;
+      background-color: red;
+      color: white;
+      border-radius: 50%;
+      width: 20px;
+      height: 20px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 10px;
+      font-weight: bold;
+      cursor: pointer;
+    }
+  }
+  .todo:hover{
+     background-color: #008b8b10;
+  }
+  #hide {
+      display: none;
+  }
+  .done, .done:hover {
+    background: linear-gradient(to left, $brand_color 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 1s ease;
+  }
+}
